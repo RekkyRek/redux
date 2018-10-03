@@ -1,20 +1,15 @@
-export const plus = (amount) => {
-    return {
-        type: 'PLUS',
-        amount
-    };
+export const newCard = (card) => {
+  return {
+    type: 'CARD',
+    action: 'NEW',
+    card
+  }
 }
 
-export const minus = (amount) => {
-    return {
-        type: 'MINUS',
-        amount
-    };
-}
-
-export const set = (amount) => {
-    return {
-        type: 'SET',
-        amount
-    };
+export const removeCard = (index) => {
+  return {
+    type: 'CARD',
+    action: 'REMOVE',
+    index
+  }
 }
